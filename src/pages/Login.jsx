@@ -43,6 +43,8 @@ function Login() {
 
   }
 
+  console.log(import.meta.env.VITE_API_URL)
+
   return (
     <>
       <h1 className="text-gray-100 font-black text-5xl capitalize md:text-6xl">
