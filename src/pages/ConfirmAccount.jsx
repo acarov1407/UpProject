@@ -24,20 +24,24 @@ function ConfirmAccount() {
   }
   useEffect(() => {
 
-    //TODO: Eliminar callback para deploy
+    toConfirmAccount();
+
+    //Codigo para usar en desarrollo
+    /*
     return () => {
       toConfirmAccount();
     }
+    */
     
   }, []);
   return (
     <>
-      <h1 className="text-sky-600 font-black text-5xl capitalize">
+      <h1 className="text-gray-100 font-black text-4xl capitalize md:text-5xl">
         Confirma tu cuenta y comienza a crear tus
-        <span className="text-slate-700"> proyectos</span>
+        <span className="text-purple-500"> proyectos</span>
       </h1>
 
-      <div className="mt-20 md:mt-10 shadow-lg px-5 py-10 rounded-xl bg-white">
+      <div className="mt-20 md:mt-10 shadow-lg px-5 py-10 rounded-xl bg-gray-800 md:max-w-md">
         {
           alert.msg &&
           <Alert 
@@ -48,7 +52,7 @@ function ConfirmAccount() {
         {
           isAccountConfirmed &&
           <Link
-          className="block text-center my-5 text-slate-500 uppercase text-sm"
+          className="block text-center mt-5 text-white uppercase text-sm font-bold hover:text-gray-200 w-auto bg-indigo-600 p-2 mx-auto"
           to="/"
         >
           Inicia Sesión
