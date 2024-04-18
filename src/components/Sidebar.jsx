@@ -21,7 +21,7 @@ function Sidebar() {
   }
 
   return (
-    <aside className={`${isActiveResponsiveBar ? 'left-0' : 'left-[-100%]'} md:block md:w-72 lg:w-80 px-8 py-10 bg-gray-900 fixed top-0 w-full h-full duration-500 md:relative md:h-auto md:left-0 z-40`}>
+    <aside className={`${isActiveResponsiveBar ? 'left-0' : 'left-[-100%]'} md:block md:w-72 lg:w-80 px-8 py-10 bg-gray-900 fixed top-0 w-full h-full duration-500 md:relative md:h-auto md:left-0 z-10`}>
       <div className="text-white flex items-center gap-5 mb-16 md:hidden">
         <button
           type="button"
