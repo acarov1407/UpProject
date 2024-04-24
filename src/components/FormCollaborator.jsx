@@ -50,7 +50,7 @@ function FormCollaborator() {
                     id="email"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
                     type="email"
-                    placeholder="Email del colaborador"
+                    placeholder="Collaborator email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
@@ -59,7 +59,7 @@ function FormCollaborator() {
             <input
                 className="bg-indigo-500 w-full text-white uppercase font-bold py-3 rounded-md hover:cursor-pointer hover:bg-indigo-600 transition-colors mt-5"
                 type="submit"
-                value="Buscar Colaborador"
+                value="Search collaborator"
             />
         </form>
     )
