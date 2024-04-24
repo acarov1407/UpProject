@@ -45,7 +45,7 @@ function FormCollaborator() {
                 <label
                     className="uppercase text-gray-100 block text-md font-bold"
                     htmlFor="email"
-                >Email Colaborador</label>
+                >Collaborator email</label>
                 <input
                     id="email"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"

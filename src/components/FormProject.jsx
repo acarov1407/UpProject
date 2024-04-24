@@ -57,12 +57,12 @@ function FormProject() {
         const isValidDeadline = validateDeadline(deadline);
 
         if (!isValidForm) {
-            showAlert({ error: true, msg: 'Todos los campos son obligatorios' });
+            showAlert({ error: true, msg: 'All fields are required' });
             return;
         }
 
         if (!isValidDeadline) {
-            showAlert({ error: true, msg: 'Debes introducir una fecha de entrega válida' });
+            showAlert({ error: true, msg: 'You must introduce a valid deadline' });
             return;
         }
 
@@ -91,12 +91,12 @@ function FormProject() {
                 <label
                     className="text-gray-100 uppercase text-sm font-bold block"
                     htmlFor="name"
-                >Nombre Proyecto</label>
+                >Project name</label>
                 <input
                     id="name"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
                     type="text"
-                    placeholder="Dale un nombre a tu proyecto"
+                    placeholder="Define a name for your project"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
@@ -105,12 +105,12 @@ function FormProject() {
                 <label
                     className="text-gray-100 uppercase text-sm font-bold block"
                     htmlFor="description"
-                >Descripción</label>
+                >Description</label>
                 <textarea
                     id="description"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
                     type="text"
-                    placeholder="De que trata tu proyecto"
+                    placeholder="What's your project about"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                     rows={3}
@@ -120,7 +120,7 @@ function FormProject() {
                 <label
                     className="text-gray-100 uppercase text-sm font-bold block"
                     htmlFor="deadline"
-                >Fecha Entrega</label>
+                >Deadline</label>
                 <input
                     id="deadline"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
@@ -133,12 +133,12 @@ function FormProject() {
                 <label
                     className="text-gray-100 uppercase text-sm font-bold block"
                     htmlFor="client"
-                >Cliente</label>
+                >Client</label>
                 <input
                     id="client"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
                     type="text"
-                    placeholder="El cliente de tu proyecto"
+                    placeholder="Client of your project"
                     value={client}
                     onChange={(e) => setClient(e.target.value)}
                 />
@@ -147,7 +147,7 @@ function FormProject() {
             <input
                 className="bg-indigo-500 w-full text-white uppercase font-bold py-3 rounded-md hover:cursor-pointer hover:bg-indigo-600 transition-colors mt-5"
                 type="submit"
-                value={`${isEditing ? 'Guardar Cambios' : 'Crear Proyecto'}`}
+                value={`${isEditing ? 'Save changes' : 'Create project'}`}
             />
         </form>
     )

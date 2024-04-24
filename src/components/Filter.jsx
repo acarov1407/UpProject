@@ -55,7 +55,7 @@ function Filter({ type }) {
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <AdjustmentsHorizontalIcon className="h-7 w-7" />
-                    Filtros
+                    Filters
                 </button>
                 {
                     isFilterActive &&
@@ -72,41 +72,41 @@ function Filter({ type }) {
             >
                 <div className={`py-4 px-3 text-white flex gap-16`}>
                     <div>
-                        <p className="uppercase text-xs border-b border-gray-300 py-3 font-bold">Fecha de Entrega</p>
+                        <p className="uppercase text-xs border-b border-gray-300 py-3 font-bold">Deadline</p>
                         <div className="flex flex-col gap-3 py-4 items-start">
                             <button
                                 type="button"
                                 className={`text-sm hover:text-white transition-colors ${activeFilter === 'urgent-desc' ? 'font-bold text-gray-200' : 'text-gray-300'}`}
                                 onClick={filterByUrgentDesc}
                             >
-                                Más Urgentes
+                                Higher Priority
                             </button>
                             <button
                                 type="button"
                                 className={`text-sm hover:text-white transition-colors ${activeFilter === 'urgent-asc' ? 'font-bold text-gray-200' : 'text-gray-300'}`}
                                 onClick={filterByUrgentAsc}
                             >
-                                Más Lejanos
+                                Lower Priority
                             </button>
                         </div>
                     </div>
 
                     <div>
-                        <p className="uppercase text-xs border-b border-gray-300 py-3 font-bold">Progreso</p>
+                        <p className="uppercase text-xs border-b border-gray-300 py-3 font-bold">Progress</p>
                         <div className="flex flex-col gap-3 py-4 items-start">
                             <button
                                 type="button"
                                 className={`text-sm hover:text-white transition-colors ${activeFilter === 'progress-desc' ? 'font-bold text-gray-200' : 'text-gray-300'}`}
                                 onClick={filterByProgressDesc}
                             >
-                                Mayor Progreso
+                                Greater Progress
                             </button>
                             <button
                                 type="button"
                                 className={`text-sm hover:text-white transition-colors ${activeFilter === 'progress-asc' ? 'font-bold text-gray-200' : 'text-gray-300'}`}
                                 onClick={filterByProgressAsc}
                             >
-                                Menor Progreso
+                                Lower Progress
                             </button>
                         </div>
                     </div>

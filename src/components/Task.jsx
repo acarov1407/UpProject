@@ -47,9 +47,9 @@ function Task({ task }) {
                 <p className="mt-2 text-xl text-white">{name}</p>
                 <p className="mt-2 text-sm text-gray-300 uppercase">{description}</p>
                 <p className="mt-2 text-md text-gray-400">{formatDate(deadline)}</p>
-                <p className="mt-2 text-gray-100">Prioridad: <span>{priority}</span></p>
+                <p className="mt-2 text-gray-100">Priority: <span>{priority}</span></p>
                 {
-                   state && <p className="mt-2 text-gray-200">Completado Por: <span className="text-white">{completedBy?.name}</span></p>
+                   state && <p className="mt-2 text-gray-200">Completed by: <span className="text-white">{completedBy?.name}</span></p>
                 }
             </div>
             <div className="w-52 flex justify-center">
@@ -59,7 +59,7 @@ function Task({ task }) {
                     onClick={handleClickCompleteTask}
                     disabled={isUpdatingState}
                 >
-                    {state ? 'Completa' : 'Incompleta'}
+                    {state ? 'Completed' : 'Incomplete'}
                 </button>
             </div>
 
@@ -81,7 +81,7 @@ function Task({ task }) {
                                 type="button"
                                 onClick={handleClickEdit}
                             >
-                                Editar
+                                Edit
                             </button>
 
                             <button
@@ -89,7 +89,7 @@ function Task({ task }) {
                                 type="button"
                                 onClick={handleClickDelete}
                             >
-                                Eliminar
+                                Delete
                             </button>
                         </div>
                     </>

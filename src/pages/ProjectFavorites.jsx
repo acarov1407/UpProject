@@ -37,7 +37,7 @@ function ProjectFavorites() {
 
     return (
         <>
-            <h1 className="text-3xl font-black mb-5 text-white uppercase">Tus proyectos favoritos</h1>
+            <h1 className="text-3xl font-black mb-5 text-white uppercase">Your favorite projects</h1>
             {
                 alert.msg && <Alert alert={alert} />
             }
@@ -55,9 +55,9 @@ function ProjectFavorites() {
                                 <ProjectPreview key={project._id} project={project} />
                             ))
                             :
-                            <p className="text-center text-gray-100 uppercase p-10">No se han encontrado resultados para tu búsqueda</p>
+                            <p className="text-center text-gray-100 uppercase p-10">No results found for your search</p>
                         :
-                        <p className="text-center text-gray-100 uppercase p-10">Aún no tienes proyectos favoritos</p>
+                        <p className="text-center text-gray-100 uppercase p-10">There are no favorite projects yet</p>
                 }
             </div>
         </>

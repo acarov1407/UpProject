@@ -46,8 +46,8 @@ function Login() {
   return (
     <>
       <h1 className="text-gray-100 font-black text-5xl capitalize md:text-6xl">
-        Inicia sesión y administra tus
-        <span className="text-purple-500"> proyectos</span>
+        Login and manage your
+        <span className="text-purple-500"> projects</span>
       </h1>
 
       <form
@@ -68,7 +68,7 @@ function Login() {
             id="email"
             name="email"
             type="email"
-            placeholder="Email de registro"
+            placeholder="ex: carl@test.com"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
@@ -77,13 +77,13 @@ function Login() {
           <label
             htmlFor="password"
             className="uppercase text-gray-100 block text-xl font-bold"
-          >Contraseña</label>
+          >Password</label>
           <input
             className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
             id="password"
             name="password"
             type="password"
-            placeholder="Contraseña"
+            placeholder="min 8 characters"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />
@@ -92,7 +92,7 @@ function Login() {
         <input
           className="bg-indigo-500 w-full text-white uppercase font-bold py-3 rounded-md hover:cursor-pointer hover:bg-indigo-600 transition-colors mt-5"
           type="submit"
-          value="Iniciar Sesión"
+          value="Login"
         />
       </form>
 
@@ -101,14 +101,14 @@ function Login() {
           className="block text-center my-5 text-gray-400 uppercase text-sm hover:text-gray-300"
           to="register"
         >
-          ¿No tienes una cuenta? Regístrate
+          Don't have an account? Sign up
         </Link>
 
         <Link
           className="block text-center my-5 text-gray-400 uppercase text-sm hover:text-gray-300"
           to="/recover-password"
         >
-          Olvidé mi contraseña
+          I forgot my password
         </Link>
       </nav>
     </>

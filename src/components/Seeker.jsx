@@ -17,7 +17,7 @@ function Seeker({ onChange }) {
         >
             <input
                 type="search"
-                placeholder="Buscar Proyecto..."
+                placeholder="Search project..."
                 className="w-full py-2 pl-12 pr-2 rounded-md bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500 
                 max-w-[250px] focus:max-w-xl transition-all duration-500"
                 value={searchTerm}

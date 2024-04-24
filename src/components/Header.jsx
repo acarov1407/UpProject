@@ -36,7 +36,7 @@ function Header() {
                         hover:bg-indigo-700 transition-colors uppercase flex items-center gap-2 max-w-[200px]"
                     >
                         <FolderIcon className="h-6 w-6" />
-                        Nuevo Proyecto
+                        New Project
                     </Link>
                 </div>
             </div>

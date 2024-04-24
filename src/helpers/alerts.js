@@ -14,12 +14,12 @@ export const showModalAlert = (data) => {
 export const showAlertDelete = async (titleText) => {
     const result = await Swal.fire({
         title: titleText,
-        text: "Esta acción no se puede deshacer!",
+        text: "This action cannot be undone!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Sí, eliminar',
+        confirmButtonText: 'Yes, delete',
         background: 'rgb(17 24 39)',
         color: '#fff',
         iconColor: 'rgb(245 158 11)'

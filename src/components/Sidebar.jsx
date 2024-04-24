@@ -33,7 +33,7 @@ function Sidebar() {
           UpTask
         </h2>
       </div>
-      <p className="text-xl font-bold text-white uppercase">Bienvenido(a):
+      <p className="text-xl font-bold text-white uppercase">Welcome:
         <span className="block text-yellow-500 uppercase">{name}</span>
       </p>
 
@@ -49,7 +49,7 @@ function Sidebar() {
           {
             location.pathname === '/projects' ? <SolidBriefcaseIcon className="h-5 w-5" /> : <BriefcaseIcon className="h-5 w-5" />
           }
-          Proyectos
+          Projects
         </button>
 
         <button
@@ -63,7 +63,7 @@ function Sidebar() {
           {
             location.pathname === '/projects/favorites' ? <SolidStarIcon className="h-5 w-5" /> : <StarIcon className="h-5 w-5" />
           }
-          Favoritos
+          Favorites
         </button>
       </nav>
 
@@ -72,7 +72,7 @@ function Sidebar() {
         className="text-white text-sm bg-indigo-500 p-3 rounded-md uppercase font-bold w-full mt-10 text-center hover:cursor-pointer hover:bg-indigo-600 transition-colors"
         onClick={handleLogout}
       >
-        Cerrar Sesión
+        Logout
       </button>
     </aside>
   )

@@ -21,7 +21,7 @@ function ProjectEdit() {
     if (isLoadingProject) return <Spinner />
     return (
         <>
-            <h1 className="font-black text-4xl text-white">Editar Proyecto: {name}</h1>
+            <h1 className="font-black text-4xl text-white">Edit Project: {name}</h1>
             <div className="mt-10 flex justify-center">
                 <FormProject />
             </div>

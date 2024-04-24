@@ -24,7 +24,7 @@ function Collaborator({ collaborator }) {
                     className="bg-red-600 px-4 py-3 text-white uppercase font-bold text-sm rounded-sm hover:bg-red-700 transition-colors"
                     onClick={handleDeleteCollaborator}
 
-                >Eliminar</button>
+                >Delete</button>
             </div>
         </div>
     )

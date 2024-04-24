@@ -54,9 +54,9 @@ function Register() {
 
   return (
     <>
-      <h1 className="text-gray-100 font-black text-5xl capitalize md:text-6xl">
-        Crea tu cuenta y administra tus
-        <span className="text-purple-500"> proyectos</span>
+      <h1 className="text-gray-100 font-black text-5xl capitalize md:text-6xl">\
+        Create your account and manage your
+        <span className="text-purple-500"> projects</span>
       </h1>
       <form
         className="mt-10 bg-gray-900 shadow rounded-md p-10 border border-gray-500"
@@ -72,13 +72,13 @@ function Register() {
           <label
             htmlFor="nombre"
             className="uppercase text-gray-100 block text-xl font-bold"
-          >Nombre</label>
+          >Name</label>
           <input
             className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
             id="nombre"
             name="nombre"
             type="text"
-            placeholder="Escribe tu nombre"
+            placeholder="Write your name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -94,7 +94,7 @@ function Register() {
             id="email"
             name="email"
             type="email"
-            placeholder="Email de registro"
+            placeholder="Your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -103,13 +103,13 @@ function Register() {
           <label
             htmlFor="password"
             className="uppercase text-gray-100 block text-xl font-bold"
-          >Contraseña</label>
+          >Password</label>
           <input
             className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
             id="password"
             name="password"
             type="password"
-            placeholder="Contraseña de Registro"
+            placeholder="Your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -119,13 +119,13 @@ function Register() {
           <label
             htmlFor="repeat-password"
             className="uppercase text-gray-100 block text-xl font-bold"
-          >Repite tu contraseña</label>
+          >Repeat password</label>
           <input
             className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
             id="repeat-password"
             name="password"
             type="password"
-            placeholder="Repite tu contraseña"
+            placeholder="Repeat your password"
             value={repeatedPassword}
             onChange={(e) => setRepeatedPassword(e.target.value)}
           />
@@ -134,7 +134,7 @@ function Register() {
         <input
           className="bg-indigo-500 w-full text-white uppercase font-bold py-3 rounded-md hover:cursor-pointer hover:bg-indigo-600 transition-colors mt-5"
           type="submit"
-          value="Crear Cuenta"
+          value="Create an account"
         />
       </form>
 
@@ -143,14 +143,14 @@ function Register() {
           className="block text-center my-5 text-gray-400 uppercase text-sm hover:text-gray-300"
           to="/"
         >
-          ¿Ya tienes una cuenta? Inicia Sesión
+          Already have an account? Login
         </Link>
 
         <Link
           className="block text-center my-5 text-gray-400 uppercase text-sm hover:text-gray-300"
           to="/recover-password"
         >
-          Olvidé mi contraseña
+          I forgot my password
         </Link>
       </nav>
     </>

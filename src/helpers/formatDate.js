@@ -8,7 +8,7 @@ function formatDate(date){
         day: 'numeric'
     }
 
-    return newDate.toLocaleDateString('es-Es', options);
+    return newDate.toLocaleDateString('en-us', options);
 
 
 }

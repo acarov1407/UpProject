@@ -3,56 +3,56 @@ export const defaultErrorTitle = 'Ha ocurrido un error';
 
 export const defaultMsg = {
     editedSuccess: {
-        title: 'Cambios guardados',
-        msg: 'Se han guardado los cambios correctamente'
+        title: 'Changes saved',
+        msg: 'All changes have been saved successfully'
     },
     editedError: {
         title: defaultErrorTitle,
-        msg: 'Ha ocurrido un error al intentar guardar los cambios'
+        msg: 'There was an error trying to save changes'
     }
 }
 
 export const projectMsg = {
     createdSuccess: {
-        title: 'Proyecto Creado',
-        msg: 'Tu proyecto se ha creado correctamente'
+        title: 'Project created',
+        msg: 'Your project has been created'
     },
     createdError: {
         title: defaultErrorTitle,
-        msg: 'Ha ocurrido un error al intentar crear el proyecto'
+        msg: 'There was an error trying to create your project'
     },
 
     deletedSuccess: {
-        title: 'Proyecto Eliminado',
-        msg: 'Tu proyecto se ha eliminado correctamente'
+        title: 'Project deleted',
+        msg: 'Your project has been deleted'
     },
     deletedError: {
         title: defaultErrorTitle,
-        msg: 'Ha ocurrido un error al intentar eliminar el proyecto'
+        msg: 'There was an error trying to delete your project'
     }
 }
 
 export const taskMsg = {
     createdSuccess: {
-        title: 'Tarea Creada',
-        msg: 'Tarea creada correctamente'
+        title: 'Task created',
+        msg: 'Task created successfully'
     },
     createdError: {
         title: defaultErrorTitle,
-        msg: 'Ha ocurrido un error al intentar crear la tarea'
+        msg: 'There was an error trying to create the task'
     },
 
     deletedSuccess: {
-        title: 'Tarea Eliminada',
-        msg: 'Tarea eliminada correctamente'
+        title: 'Task deleted',
+        msg: 'Task deleted successfully'
     },
     deletedError: {
         title: defaultErrorTitle,
-        msg: 'Ha ocurrido un error al intentar eliminar la tarea'
+        msg: 'There was an error trying to delete the task'
     },
     completeError: {
         title: defaultErrorTitle,
-        msg: 'No se ha podido completar la tarea'
+        msg: 'Task could not be completed'
     }
 }
 
@@ -60,26 +60,26 @@ export const taskMsg = {
 
 export const collabMsg = {
     addSuccess: {
-        title: 'Colaborador Añadido'
+        title: 'Collaborator added'
     },
     addError: {
         title: defaultErrorTitle,
-        msg: 'No se ha podido añadir este colaborador'
+        msg: 'Collaborator could not be added'
     },
     deletedSuccess: {
-        title: 'Colaborador Eliminado',
-        msg: 'El colaborador ha sido eliminado correctamente'
+        title: 'Collaborator deleted',
+        msg: 'Collaborator has been successfully removed'
     },
     deletedError: {
         title: defaultErrorTitle,
-        msg: 'No se ha podido eliminar este colaborador'
+        msg: 'Collaborator could not be removed'
     }
 }
 
 export const favoriteMsg = {
     Error: {
         title: defaultErrorTitle,
-        msg: 'No se ha podido realizar la operación'
+        msg: 'The operation could not be completed'
     }
 }
 

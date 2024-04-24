@@ -49,7 +49,7 @@ function ModalFormTask() {
                                     className="bg-gray-900 rounded-md text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     onClick={handleModalFormTask}
                                 >
-                                    <span className="sr-only">Cerrar</span>
+                                    <span className="sr-only">Close</span>
                                     <XCircleIcon className="h-6 w-6" />
                                 </button>
                             </div>
@@ -58,7 +58,7 @@ function ModalFormTask() {
                             <div className="sm:flex sm:items-start">
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
                                     <Dialog.Title as="h3" className="text-2xl leading-6 font-bold text-white">
-                                        {isEditingTask ?  'Editar Tarea' : 'Crear Tarea'}
+                                        {isEditingTask ?  'Edit Task' : 'Create Task'}
                                     </Dialog.Title>
                                     <FormTask />
                                 </div>

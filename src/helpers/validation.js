@@ -49,35 +49,35 @@ export function validateForm(formData){
     if(!isFull){
         return {
             isValid: false,
-            msg: 'Todos los campos son obligatorios'
+            msg: 'All fields are required'
         }
     }
     
     if(!isValidName) {
         return {
             isValid: false,
-            msg: 'Ingresa un nombre válido'
+            msg: 'Enter a valid name'
         }
     }
 
     if(!isValidEmail) {
         return {
             isValid: false,
-            msg: 'Ingresa un email válido'
+            msg: 'Enter a valid email'
         }
     }
 
     if(!isValidPassword){
         return {
             isValid: false,
-            msg: 'Tu contraseña debe tener por lo menos 8 caracteres'
+            msg: 'Your password must be at leat 8 characters long'
         }
     }
 
     if(!areSamePassword){
         return {
             isValid: false,
-            msg: 'Las contraseñas no coinciden'
+            msg: 'Passwords does not match'
         }
     }
 
@@ -93,14 +93,14 @@ export function validateTaskForm(task, projectDeadline){
     if(!isFull){
         return {
             isValid: false,
-            msg: 'Todos los campos son obligatorios'
+            msg: 'All fields are required'
         }
     }
 
     if(!isValidDeadline){
         return {
             isValid: false,
-            msg: 'La fecha de entrega no es válida'
+            msg: 'Deadline is not valid'
         }
     }
 

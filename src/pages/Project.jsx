@@ -120,22 +120,22 @@ function Project() {
                 {
                     admin &&
                     (
-                        <div className="flex flex-col items-start justify-center gap-4 md:gap-3">
+                        <div className="flex flex-col items-start justify-center gap-4 md:gap-3 text-sm">
                             <div className="flex gap-1 items-center text-gray-400 hover:text-white transition-colors">
-                                <PencilSquareIcon className="h-6 w-6" />
+                                <PencilSquareIcon className="h-5 w-5" />
                                 <Link
                                     className="uppercase font-bold"
                                     to={`/projects/edit/${_id}`}
-                                >Editar</Link>
+                                >Edit</Link>
                             </div>
                             <div className="flex gap-1 items-center text-gray-400 hover:text-white transition-colors">
-                                <TrashIcon className="h-6 w-6" />
+                                <TrashIcon className="h-5 w-5" />
 
                                 <button
                                     type="button"
                                     className="uppercase font-bold"
                                     onClick={handleClickDelete}
-                                >Eliminar</button>
+                                >Delete</button>
                             </div>
                         </div>
                     )
@@ -153,40 +153,40 @@ function Project() {
         hover:bg-sky-700 transition-colors uppercase flex items-center gap-2"
                             onClick={handleModalFormTask}
                         >
-                            <PlusCircleIcon className="h-6 w-6" />
-                            Nueva Tarea
+                            <PlusCircleIcon className="h-5 w-5" />
+                            New task
                         </button>
                     )
                 }
 
                 <button
                     type="button"
-                    className="text-white bg-blue-600 py-3 px-4 w-auto md:w-auto rounded-md text-xs uppercase text-center font-bold hover:bg-blue-700 transition-colors flex items-center gap-2"
+                    className="text-white bg-blue-600 py-3 px-5 w-auto md:w-auto rounded-md text-sm uppercase text-center font-bold hover:bg-blue-700 transition-colors flex items-center gap-2"
                     onClick={() => setIsOpenDetails(!isOpenDetails)}
                 >
-                    {isOpenDetails ? <EyeSlashIcon className="h-4 w-4" /> : <EyeIcon className="h-4 w-4" />}
-                    {isOpenDetails ? 'Ocultar Detalles' : 'Ver Detalles'}
+                    {isOpenDetails ? <EyeSlashIcon className="h-5 w-5" /> : <EyeIcon className="h-5 w-5" />}
+                    {isOpenDetails ? 'Hide details' : 'View details'}
                 </button>
             </div>
             {
                 isOpenDetails &&
                 <div className="text-white mt-8 grid gap-2">
-                    <p className="font-bold">Fecha de Entrega:
+                    <p className="font-bold">Deadline:
                         <span className="text-gray-300 font-normal ml-2">{formatDate(deadline)}</span>
                     </p>
                     {
                         admin &&
-                        <p className="font-bold">Cliente:
+                        <p className="font-bold">Client:
                             <span className="text-gray-300 font-normal ml-2">{client}</span>
                         </p>
                     }
 
-                    <p className="font-bold">Descripción:
+                    <p className="font-bold">Description:
                         <span className="text-gray-300 font-normal ml-2">{description}</span>
                     </p>
 
                     <div>
-                        <p className="font-bold">Progreso: </p>
+                        <p className="font-bold">Progress: </p>
                         <ProgressBar progress={progress} />
                     </div>
 
@@ -194,7 +194,7 @@ function Project() {
             }
 
 
-            <p className="font-bold text-2xl mt-10 text-white">Tareas del Proyecto</p>
+            <p className="font-bold text-2xl mt-10 text-white">Project tasks</p>
             <div className={`bg-gray-1000 shadow mt-5 rounded-md flex flex-col gap-5 ${!existTasks ? 'border border-gray-700 bg-gray-850' : ''}`}>
                 {
                     existTasks
@@ -206,7 +206,7 @@ function Project() {
                         )
                         :
                         (
-                            <p className="text-center text-gray-100 uppercase p-10">No hay tareas en este proyecto</p>
+                            <p className="text-center text-gray-100 uppercase p-10">There are no tasks on this project</p>
                         )
                 }
             </div>
@@ -216,11 +216,11 @@ function Project() {
                 (
                     <>
                         <div className="flex items-center justify-between mt-16">
-                            <p className="font-bold text-2xl text-white">Colaboradores</p>
+                            <p className="font-bold text-2xl text-white">Collaborators</p>
                             <Link
                                 className="text-gray-400 uppercase font-bold hover:text-white transition-colors"
                                 to={`/projects/new-collaborator/${currentProject._id}`}
-                            >Añadir</Link>
+                            >Add</Link>
                         </div>
                         <div className={`bg-gray-1000 shadow mt-5 rounded-md ${!existCollaborators ? 'border border-gray-700 bg-gray-850' : ''}`}>
                             {
@@ -233,7 +233,7 @@ function Project() {
                                     )
                                     :
                                     (
-                                        <p className="text-center text-gray-100 uppercase p-10">No hay colaboradores en este proyecto</p>
+                                        <p className="text-center text-gray-100 uppercase p-10">There are no collaborators on this project</p>
                                     )
                             }
                         </div>

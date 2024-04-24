@@ -37,8 +37,8 @@ function ConfirmAccount() {
   return (
     <>
       <h1 className="text-gray-100 font-black text-4xl capitalize md:text-5xl">
-        Confirma tu cuenta y comienza a crear tus
-        <span className="text-purple-500"> proyectos</span>
+        Confirm your account and start to create your
+        <span className="text-purple-500"> projects</span>
       </h1>
 
       <div className="mt-20 md:mt-10 shadow-lg px-5 py-10 rounded-xl bg-gray-800 md:max-w-md">
@@ -55,7 +55,7 @@ function ConfirmAccount() {
           className="block text-center mt-5 text-white uppercase text-sm font-bold hover:text-gray-200 w-auto bg-indigo-600 p-2 mx-auto"
           to="/"
         >
-          Inicia Sesión
+          Login
         </Link>
         }
       </div>

@@ -6,7 +6,7 @@ import Alert from "../components/Alert";
 
 
 
-const PRIORITY = ['Baja', 'Media', 'Alta'];
+const PRIORITY = ['Low', 'Medium', 'High'];
 
 function FormTask() {
 
@@ -92,11 +92,11 @@ function FormTask() {
                 <label
                     className="text-gray-100 uppercase text-sm font-bold block"
                     htmlFor="name"
-                >Nombre Tarea</label>
+                >Task name</label>
                 <input
                     id="name"
                     type="text"
-                    placeholder="Nombre de la tarea"
+                    placeholder="A name for the task"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -106,10 +106,10 @@ function FormTask() {
                 <label
                     className="text-gray-100 uppercase text-sm font-bold block"
                     htmlFor="description"
-                >Descripción Tarea</label>
+                >Description</label>
                 <textarea
                     id="description"
-                    placeholder="De que trata la tarea"
+                    placeholder="What's task about"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
@@ -119,7 +119,7 @@ function FormTask() {
                 <label
                     className="text-gray-100 uppercase text-sm font-bold block"
                     htmlFor="deadline"
-                >Fecha De Entrega</label>
+                >Deadline</label>
                 <input
                     id="deadline"
                     type="date"
@@ -132,13 +132,13 @@ function FormTask() {
                 <label
                     className="text-gray-100 uppercase text-sm font-bold block"
                     htmlFor="priority"
-                >Prioridad</label>
+                >Priority</label>
                 <select
                     id="priority"
                     className="w-full mt-3 p-3 rounded-lg bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:border-indigo-500"
                     value={priority}
                     onChange={(e) => setPriority(e.target.value)}
-                >   <option value="">-- Selecciona una opción --</option>
+                >   <option value="">-- Select an option --</option>
                     {
                         PRIORITY.map(_priority => (
                             <option key={_priority} value={_priority}>{_priority}</option>
@@ -149,7 +149,7 @@ function FormTask() {
 
             <input
                 type="submit"
-                value={`${isEditingTask ? 'Guardar Cambios' : 'Crear Tarea'}`}
+                value={`${isEditingTask ? 'Save changes' : 'Create task'}`}
                 className="bg-indigo-500 w-full text-white uppercase font-bold py-2 rounded-md hover:cursor-pointer hover:bg-indigo-600 transition-colors mt-5"
             />
         </form>

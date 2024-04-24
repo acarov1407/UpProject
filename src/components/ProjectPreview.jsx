@@ -17,7 +17,7 @@ function ProjectPreview({ project }) {
           {client}
         </span>
         {
-          isCollaborator && <span className="ml-4 p-1 text-xs rounded-md text-white bg-green-500 font-bold">Colaborador</span>
+          isCollaborator && <span className="ml-4 p-1 text-xs rounded-md text-white bg-green-500 font-bold">Collaborator</span>
         }
 
       </p>
@@ -27,7 +27,7 @@ function ProjectPreview({ project }) {
         className="text-indigo-400 uppercase text-sm font-bold hover:text-indigo-500 transition-colors flex items-center gap-2"
         to={`/projects/${_id}`}
       >
-        Ver Proyecto
+        View Project
         <InformationCircleIcon className="w-5 h-5"/>
       </Link>
     </div>
