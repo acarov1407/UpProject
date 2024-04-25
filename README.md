@@ -1,2 +1,1 @@
-Aplicacion web hecha con MERN stack encargada de controlar la gestión de proyectos y tareas. Cuenta con sistema de autenticación completo, uso de sesiones 
-y seguridad al momento de guardar los datos de los usuarios
+eb application built with the MERN stack, responsible for managing projects and tasks. It features a complete authentication system and real-time task assignment.
